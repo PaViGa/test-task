@@ -62,6 +62,7 @@ public class ObjectsCreator : MonoBehaviour
     }
     private void OnDisable()
     {
+        values.pause = false;
         values.startGame = false;
         values.SetScore(0);
     }

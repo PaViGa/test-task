@@ -8,7 +8,7 @@ public class Values : ScriptableObject
     private int score;
     public bool startGame;
     public float spawnTime;
-
+    public bool pause;
     public void SetScore(int i)
     { 
         score += i;

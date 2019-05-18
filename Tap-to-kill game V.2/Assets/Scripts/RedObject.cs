@@ -17,8 +17,12 @@ public class RedObject : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        values.SetScore(-points);
-        gameObject.SetActive(false);
+        if (!values.pause)
+        {
+            values.SetScore(-points);
+            gameObject.SetActive(false);
+        }
+        
     }
     
     private void OnTriggerEnter(Collider other)
