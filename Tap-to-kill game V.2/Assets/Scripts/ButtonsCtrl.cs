@@ -9,12 +9,18 @@ public class ButtonsCtrl : MonoBehaviour
     GameObject panel;
     [SerializeField]
     Values values;
+    [SerializeField]
+    Button pause;
+    [SerializeField]
+    Text currentScore;
 
     public void StartGame()
     {
         values.startGame = true;
         panel.SetActive(false);
+        currentScore.gameObject.SetActive(true);
         values.SetScore(0);
+        pause.gameObject.SetActive(true);
     }
     public void Pause()
     {

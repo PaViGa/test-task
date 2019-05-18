@@ -6,7 +6,7 @@ public class RedObject : MonoBehaviour
 {
     [SerializeField]
     int points;
-    float borderX = 0.5f, borderY = 1;
+    float borderX = 0.5f, borderY = 2;
     private Vector3 min, max;
     [SerializeField]
     private Values values;

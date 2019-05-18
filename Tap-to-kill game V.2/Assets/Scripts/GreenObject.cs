@@ -9,7 +9,7 @@ public class GreenObject : MonoBehaviour
     int points;
     [SerializeField]
     private Values values;
-    private float borderX = 0.5f, borderY = 1;
+    private float borderX = 0.5f, borderY = 2;
     private Vector3 min, max;
     private void Start()
     {

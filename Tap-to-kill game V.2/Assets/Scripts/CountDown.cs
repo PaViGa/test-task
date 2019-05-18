@@ -7,7 +7,7 @@ using DG.Tweening;
 public class CountDown : MonoBehaviour
 {
     [SerializeField]
-    Text CDtext;
+    Text CDtext, currentScore;
     [SerializeField]
     Values values;
     [SerializeField]
@@ -17,6 +17,8 @@ public class CountDown : MonoBehaviour
     GameObject panel;
     [SerializeField]
     Text ScoreGameOwer;
+    [SerializeField]
+    Button pause;
     void Start()
     {
         
@@ -38,6 +40,8 @@ public class CountDown : MonoBehaviour
         }
         else
         {
+            pause.gameObject.SetActive(false);
+            currentScore.gameObject.SetActive(false);
             ScoreGameOwer.text = values.GetScore().ToString();
             time = 60;
         }

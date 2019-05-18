@@ -8,7 +8,7 @@ public class ObjectsCreator : MonoBehaviour
     GameObject[] objects;
     GameObject[] objectsOnScene;
     Vector3 min, max;
-    float time, borderX = 0.5f, borderY = 1;
+    float time, borderX = 0.5f, borderY = 2;
     [SerializeField]
     Values values;
     // Start is called before the first frame update
